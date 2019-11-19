@@ -45,6 +45,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="QLNet, Version=1.11.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\QLNet.1.11.3\lib\net452\QLNet.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -108,6 +111,7 @@
     <Content Include="Content\sass\Fabric.Color.Mixins.Output.scss" />
     <Content Include="Content\sass\Fabric.Animations.RTL.Output.scss" />
     <Content Include="Content\sass\Fabric.Animations.Output.scss" />
+    <Content Include="Handler.ashx" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Functions\FunctionFile.html" />
     <Content Include="Functions\FunctionFile.js" />
@@ -402,6 +406,10 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Handler.ashx.cs">
+      <DependentUpon>Handler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Lib\Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -413,6 +421,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
