@@ -13,7 +13,7 @@ namespace SimularMasWeb.Lib
     {
         public int Add(int X, int Y)
         {
-            GeneralizedBlackScholesProcess gbsp = new GeneralizedBlackScholesProcess();
+            //GeneralizedBlackScholesProcess gbsp = new GeneralizedBlackScholesProcess();
             int? timeSteps = 10;
             int? timeStepsPerYear = null;
             bool antitheticVariate = false;
@@ -22,8 +22,8 @@ namespace SimularMasWeb.Lib
             double? maxSamples = null;
             ulong seed = UInt64.MaxValue;
 
-            MCAmericanEngine <PseudoRandom, Statistics> monteCarlo =
-                new MCAmericanEngine<PseudoRandom, Statistics>(gbsp, timeSteps, timeStepsPerYear, antitheticVariate, controlVariate, requiredSamples, maxSamples, seed);
+            //MCAmericanEngine <PseudoRandom, Statistics> monteCarlo =
+                //new MCAmericanEngine<PseudoRandom, Statistics>(gbsp, timeSteps, timeStepsPerYear, antitheticVariate, controlVariate, requiredSamples, maxSamples, seed);
 
             return X + Y;
         }
