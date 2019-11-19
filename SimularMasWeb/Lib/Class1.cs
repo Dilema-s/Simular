@@ -22,6 +22,7 @@ namespace SimularMasWeb.Lib
             double? maxSamples = null;
             ulong seed = UInt64.MaxValue;
 
+
             //MCAmericanEngine <PseudoRandom, Statistics> monteCarlo =
                 //new MCAmericanEngine<PseudoRandom, Statistics>(gbsp, timeSteps, timeStepsPerYear, antitheticVariate, controlVariate, requiredSamples, maxSamples, seed);
 
